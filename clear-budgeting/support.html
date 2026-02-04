@@ -18,6 +18,17 @@
         .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
         .back-link { color: #a0aec0; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 40px; }
         .back-link:hover { color: #fff; }
+        .page-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+        .page-header .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+        }
         h1 { font-size: 2rem; margin-bottom: 16px; color: #fff; }
         .intro { color: #a0aec0; margin-bottom: 40px; font-size: 1.1rem; }
         h2 { font-size: 1.25rem; color: #fff; margin-top: 40px; margin-bottom: 16px; }
@@ -35,7 +46,10 @@
     <div class="container">
         <a href="/clear-budgeting/" class="back-link">← Back to Clear Budgeting</a>
 
-        <h1>Support</h1>
+        <div class="page-header">
+            <img src="/images/clear-budgeting-icon.png" alt="Clear Budgeting" class="app-icon">
+            <h1>Support</h1>
+        </div>
         <p class="intro">Need help with Clear Budgeting? Check out the FAQs below or contact us directly.</p>
 
         <h2>Frequently Asked Questions</h2>

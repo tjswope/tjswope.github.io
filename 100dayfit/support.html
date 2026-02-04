@@ -29,6 +29,17 @@
             margin-bottom: 40px;
         }
         .back-link:hover { color: #fff; }
+        .page-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 8px;
+        }
+        .page-header .app-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+        }
         h1 {
             font-size: 2rem;
             margin-bottom: 16px;
@@ -95,7 +106,10 @@
     <div class="container">
         <a href="/100dayfit/" class="back-link">← Back to 100DayFit</a>
 
-        <h1>Support</h1>
+        <div class="page-header">
+            <img src="/images/100dayfit-icon.png" alt="100DayFit" class="app-icon">
+            <h1>Support</h1>
+        </div>
         <p class="intro">Need help with 100DayFit? Check out the FAQs below or contact us directly.</p>
 
         <h2>Frequently Asked Questions</h2>
