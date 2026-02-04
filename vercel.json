@@ -1,0 +1,31 @@
+{
+  "rewrites": [
+    { "source": "/100dayfit", "destination": "/100dayfit/index.html" },
+    { "source": "/100dayfit/privacy", "destination": "/100dayfit/privacy.html" },
+    { "source": "/100dayfit/terms", "destination": "/100dayfit/terms.html" },
+    { "source": "/100dayfit/support", "destination": "/100dayfit/support.html" },
+    { "source": "/100dayfit/strava", "destination": "/100dayfit/strava/index.html" },
+    { "source": "/clear-budgeting", "destination": "/clear-budgeting/index.html" },
+    { "source": "/clear-budgeting/privacy", "destination": "/clear-budgeting/privacy.html" },
+    { "source": "/clear-budgeting/terms", "destination": "/clear-budgeting/terms.html" },
+    { "source": "/clear-budgeting/support", "destination": "/clear-budgeting/support.html" },
+    { "source": "/generictimer", "destination": "/generictimer/index.html" },
+    { "source": "/generictimer/privacy", "destination": "/generictimer/privacy.html" },
+    { "source": "/generictimer/terms", "destination": "/generictimer/terms.html" },
+    { "source": "/generictimer/support", "destination": "/generictimer/support.html" },
+    { "source": "/keggle-kounter", "destination": "/keggle-kounter/index.html" },
+    { "source": "/keggle-kounter/privacy", "destination": "/keggle-kounter/privacy.html" },
+    { "source": "/keggle-kounter/terms", "destination": "/keggle-kounter/terms.html" },
+    { "source": "/keggle-kounter/support", "destination": "/keggle-kounter/support.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
+}
