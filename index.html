@@ -76,10 +76,7 @@
             height: 80px;
             border-radius: 18px;
             margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
+            object-fit: cover;
         }
 
         .app-card h2 {
@@ -109,11 +106,6 @@
             text-decoration: underline;
         }
 
-        /* App-specific colors */
-        .app-100dayfit .app-icon { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        .app-budget .app-icon { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-        .app-timer .app-icon { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
-        .app-keggle .app-icon { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
 
         footer {
             text-align: center;
@@ -147,8 +139,8 @@
         </header>
 
         <div class="apps-grid">
-            <a href="/100dayfit/" class="app-card app-100dayfit">
-                <div class="app-icon">💪</div>
+            <a href="/100dayfit/" class="app-card">
+                <img src="/images/100dayfit-icon.png" alt="100DayFit" class="app-icon">
                 <h2>100DayFit</h2>
                 <p>Take the 100-day fitness challenge. AI-powered exercise counting for push-ups, plank, pull-ups, and bar hangs.</p>
                 <div class="app-links">
@@ -156,8 +148,8 @@
                 </div>
             </a>
 
-            <a href="/clear-budgeting/" class="app-card app-budget">
-                <div class="app-icon">💰</div>
+            <a href="/clear-budgeting/" class="app-card">
+                <img src="/images/clear-budgeting-icon.png" alt="Clear Budgeting" class="app-icon">
                 <h2>Clear Budgeting</h2>
                 <p>Take control of your finances. Track expenses, scan receipts, and share budgets with family.</p>
                 <div class="app-links">
@@ -165,8 +157,8 @@
                 </div>
             </a>
 
-            <a href="/generictimer/" class="app-card app-timer">
-                <div class="app-icon">⏱️</div>
+            <a href="/generictimer/" class="app-card">
+                <img src="/images/generictimer-icon.png" alt="GenericTimer" class="app-icon">
                 <h2>GenericTimer</h2>
                 <p>Customizable interval timers for workouts, cooking, studying, or any activity that needs timing.</p>
                 <div class="app-links">
@@ -174,8 +166,8 @@
                 </div>
             </a>
 
-            <a href="/keggle-kounter/" class="app-card app-keggle">
-                <div class="app-icon">🏋️</div>
+            <a href="/keggle-kounter/" class="app-card">
+                <img src="/images/keggle-kounter-icon.png" alt="Keggle Kounter" class="app-icon">
                 <h2>Keggle Kounter</h2>
                 <p>Guided pelvic floor exercises with customizable timers, progress tracking, and smart reminders.</p>
                 <div class="app-links">
