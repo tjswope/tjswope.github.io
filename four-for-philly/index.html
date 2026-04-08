@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four for Philly - Philly Sports, All Four Teams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0a0f1e 0%, #111827 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .back-link {
+            color: #a0aec0;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+        .back-link:hover { color: #fff; }
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin: 0 auto 24px;
+            display: block;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #a0aec0;
+            margin-bottom: 12px;
+        }
+        .teams {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .team-badge {
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.05em;
+        }
+        .eagles  { background: rgba(0, 76, 84, 0.4);  border: 1px solid rgba(0, 76, 84, 0.8);  color: #4db8c0; }
+        .phillies { background: rgba(232, 24, 40, 0.2); border: 1px solid rgba(232, 24, 40, 0.5); color: #f47a82; }
+        .flyers  { background: rgba(247, 73, 2, 0.2);  border: 1px solid rgba(247, 73, 2, 0.5);  color: #f9915e; }
+        .sixers  { background: rgba(0, 107, 182, 0.2); border: 1px solid rgba(0, 107, 182, 0.5); color: #60a9e8; }
+        .app-store-badge { display: inline-block; }
+        .app-store-badge img { height: 50px; }
+        .coming-soon {
+            display: inline-block;
+            color: #718096;
+            font-size: 0.95rem;
+            padding: 12px 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        .features { margin-bottom: 60px; }
+        .features h2 {
+            font-size: 1.75rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .feature-icon { font-size: 2rem; margin-bottom: 12px; }
+        .feature h3 { font-size: 1.05rem; margin-bottom: 8px; }
+        .feature p { color: #718096; font-size: 0.9rem; line-height: 1.55; }
+        .ai-callout {
+            background: linear-gradient(135deg, rgba(0,76,84,0.3) 0%, rgba(0,107,182,0.3) 100%);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 20px;
+            padding: 36px;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .ai-callout h2 { font-size: 1.5rem; margin-bottom: 12px; }
+        .ai-callout p { color: #a0aec0; line-height: 1.7; max-width: 560px; margin: 0 auto; }
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #004C54, #006BB6);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .legal-links a { color: #a0aec0; text-decoration: none; }
+        .legal-links a:hover { color: #fff; }
+        footer { text-align: center; color: #4a5568; padding-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← Back to all apps</a>
+
+        <div class="hero">
+            <img src="/images/four-for-philly-icon.png" alt="Four for Philly" class="app-icon">
+            <h1>Four for Philly</h1>
+            <p class="tagline">Eagles. Phillies. Flyers. Sixers.</p>
+            <div class="teams">
+                <span class="team-badge eagles">Eagles</span>
+                <span class="team-badge phillies">Phillies</span>
+                <span class="team-badge flyers">Flyers</span>
+                <span class="team-badge sixers">Sixers</span>
+            </div>
+            <span class="coming-soon">Coming soon to the App Store</span>
+        </div>
+
+        <div class="ai-callout">
+            <span class="ai-badge">Apple Intelligence</span>
+            <h2>Catch up in seconds</h2>
+            <p>Four for Philly uses on-device AI to read the latest articles and generate a smart news briefing — organized by topic, written in plain language. Know what happened without reading everything.</p>
+        </div>
+
+        <div class="features">
+            <h2>Everything you need</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">📰</div>
+                    <h3>AI News Briefings</h3>
+                    <p>Articles grouped by topic and summarized with key names, scores, and dates. No fluff.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏟️</div>
+                    <h3>Game Recaps & Previews</h3>
+                    <p>A two-sentence recap or preview generated from real articles and box score data for every game.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Live Scores</h3>
+                    <p>Live scores as they happen, with final results and a full season schedule for each team.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Standings</h3>
+                    <p>Division and conference standings, always current, with your team highlighted.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📡</div>
+                    <h3>All Your Sources</h3>
+                    <p>Articles from ESPN, PhillyVoice, Bleeding Green Nation, The Good Phight, Broad Street Hockey, and Liberty Ballers — all in one place.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Private by Design</h3>
+                    <p>No account required. All AI processing happens on your device. Nothing leaves your phone.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="legal-links">
+            <a href="/four-for-philly/privacy.html">Privacy Policy</a>
+            <a href="/four-for-philly/support.html">Support</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 New Wave Apps</p>
+        </footer>
+    </div>
+</body>
+</html>
