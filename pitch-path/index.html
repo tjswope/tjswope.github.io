@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Path - Ear Training for Musicians</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .back-link {
+            color: #a0aec0;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin: 0 auto 24px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: #a0aec0;
+            margin-bottom: 30px;
+        }
+
+        .app-store-badge {
+            display: inline-block;
+        }
+
+        .app-store-badge img {
+            height: 50px;
+        }
+
+        .features {
+            margin-bottom: 60px;
+        }
+
+        .features h2 {
+            font-size: 1.75rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .pricing {
+            text-align: center;
+            margin-bottom: 60px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+        }
+
+        .pricing h2 {
+            font-size: 1.75rem;
+            margin-bottom: 16px;
+        }
+
+        .pricing .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .pricing .price-note {
+            color: #718096;
+            margin-bottom: 24px;
+        }
+
+        .pricing ul {
+            list-style: none;
+            text-align: left;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        .pricing li {
+            color: #a0aec0;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing li::before {
+            content: "\2713";
+            color: #4facfe;
+            font-weight: 700;
+        }
+
+        .free-note {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .legal-links a {
+            color: #a0aec0;
+            text-decoration: none;
+        }
+
+        .legal-links a:hover {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            color: #718096;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Back to all apps</a>
+
+        <div class="hero">
+            <img src="/images/pitch-path-icon.png" alt="Pitch Path" class="app-icon">
+            <h1>Pitch Path</h1>
+            <p class="tagline">Train your ear the hands-on way. Learn intervals, scales, and pitch recognition on guitar or piano.</p>
+            <a href="https://apps.apple.com/app/id0000000000" class="app-store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+        </div>
+
+        <div class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🎸</div>
+                    <h3>Guitar + Piano</h3>
+                    <p>Practice on a realistic guitar fretboard or a two-octave piano keyboard. Switch between them anytime.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎵</div>
+                    <h3>Interval Training</h3>
+                    <p>Hear two notes, then find them. Start with 3rds and 5ths, unlock every interval, then advance to melodies.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👂</div>
+                    <h3>Pitch Recognition</h3>
+                    <p>Identify individual notes by ear. Each level adds one more note with chord-based calibration to train your memory.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <h3>21 Levels</h3>
+                    <p>14 interval training levels plus 7 pitch recognition levels. Progressive difficulty from beginner to advanced.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Learn From Mistakes</h3>
+                    <p>Every level starts with calibration. Get an answer wrong and the correct answer plays back so you learn as you go.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Track Progress</h3>
+                    <p>Daily progress calendar shows your scores and levels. Unlock levels permanently and pick up where you left off.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2>Pricing</h2>
+            <div class="price">$2.99</div>
+            <p class="price-note">One-time purchase</p>
+            <ul>
+                <li>First 3 levels free in both modes</li>
+                <li>Unlock all 21 levels</li>
+                <li>Melodies up to 6 notes</li>
+                <li>All future updates included</li>
+            </ul>
+            <p class="free-note">Try it free &mdash; no account required, no ads.</p>
+        </div>
+
+        <div class="legal-links">
+            <a href="/pitch-path/privacy.html">Privacy Policy</a>
+            <a href="/pitch-path/terms.html">Terms of Service</a>
+            <a href="/pitch-path/support.html">Support</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 New Wave Apps</p>
+        </footer>
+    </div>
+</body>
+</html>
