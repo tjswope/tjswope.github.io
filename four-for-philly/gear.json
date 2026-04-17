@@ -1,70 +1,54 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2867
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\froman\fcharset0 Times-Bold;\f2\froman\fcharset0 Times-Roman;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red27\green27\blue27;\red255\green255\blue255;
-}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c14118\c14118\c14118;\cssrgb\c100000\c100000\c100000;
-}
-\margl1440\margr1440\vieww17860\viewh15920\viewkind0
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf2 \CocoaLigature0 \{\
-    "items": [\
-      \{\
-        "id": \'93flyers-playoffs-t-shirt\'94,\
-        "title": "
-\f1\b\fs32 \cf3 \cb4 \expnd0\expndtw0\kerning0
-\CocoaLigature1 \outl0\strokewidth0 \strokec3 Philadelphia Flyers 2026 Stanley Cup Playoffs T-Shirt - Orange
-\f0\b0\fs24 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 ",\
-        "description": "
-\f2\fs28 \cf0 \cb4 \expnd0\expndtw0\kerning0
-\CocoaLigature1 \outl0\strokewidth0 \strokec2 The quest for the 2026 Stanley Cup is underway for the Philadelphia Flyers. Step into the action with this 2026 Stanley Cup Playoffs T-Shirt, and you'll be ready to cheer your team onto victory. Crafted from comfortable cotton, this piece is a great grab for any die-hard Philadelphia Flyers supporter looking to add some playoff swagger to their wardrobe. Wear this item with gusto as you rally behind your squad on their journey for hockey's top prize.
-\f0\fs24 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \outl0\strokewidth0 ",\
-        "imageURL": "https://fanatics.frgimages.com/philadelphia-flyers/mens-orange-philadelphia-flyers-2026-stanley-cup-playoffs-t-shirt_ss5_p-204065665+pv-1+u-kb13ky8hihnab2tepkvo+v-npv3iogd176a5nbno2bf.png?_hv=2&w=1018",\
-        "affiliateURL": "https://fanatics.93n6tx.net/B5xJmW",\
-        "price": "$35.00\'94,\
-        "team": \'93flyers,\
-        "featured": true\
-      \},\
-      \{\
-        "id": "phillies-harper-tee",\
-        "title": "Bryce Harper Philadelphia Phillies T-Shirt",\
-        "description": "Player Name & Number Tee - Red",\
-        "imageURL": "https://images.fanatics.com/example/harper-tee.jpg",\
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",\
-        "price": "$39.99",\
-        "team": "phillies",\
-        "featured": false\
-      \},\
-      \{\
-        "id": "sixers-embiid-jersey",\
-        "title": "Joel Embiid Philadelphia 76ers Swingman Jersey",\
-        "description": "Nike Swingman Jersey - Royal Blue",\
-        "imageURL": "https://images.fanatics.com/example/embiid-jersey.jpg",\
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",\
-        "price": "$109.99",\
-        "team": "sixers",\
-        "featured": true\
-      \},\
-      \{\
-        "id": "flyers-hat",\
-        "title": "Philadelphia Flyers Adjustable Hat",\
-        "description": "Fanatics Branded - Orange/Black",\
-        "imageURL": "https://images.fanatics.com/example/flyers-hat.jpg",\
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",\
-        "price": "$29.99",\
-        "team": "flyers",\
-        "featured": false\
-      \},\
-      \{\
-        "id": "union-scarf",\
-        "title": "Philadelphia Union Supporter Scarf",\
-        "description": "Official MLS Scarf - Navy/Gold",\
-        "imageURL": "https://images.fanatics.com/example/union-scarf.jpg",\
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",\
-        "price": "$34.99",\
-        "team": "union",\
-        "featured": false\
-      \}\
-    ]\
-  \}}
+{
+    "items": [
+      {
+        "id": “flyers-playoffs-t-shirt”,
+        "title": "Philadelphia Flyers 2026 Stanley Cup Playoffs T-Shirt - Orange",
+        "description": "The quest for the 2026 Stanley Cup is underway for the Philadelphia Flyers. Step into the action with this 2026 Stanley Cup Playoffs T-Shirt, and you'll be ready to cheer your team onto victory. Crafted from comfortable cotton, this piece is a great grab for any die-hard Philadelphia Flyers supporter looking to add some playoff swagger to their wardrobe. Wear this item with gusto as you rally behind your squad on their journey for hockey's top prize.",
+        "imageURL": "https://fanatics.frgimages.com/philadelphia-flyers/mens-orange-philadelphia-flyers-2026-stanley-cup-playoffs-t-shirt_ss5_p-204065665+pv-1+u-kb13ky8hihnab2tepkvo+v-npv3iogd176a5nbno2bf.png?_hv=2&w=1018",
+        "affiliateURL": "https://fanatics.93n6tx.net/B5xJmW",
+        "price": "$35.00”,
+        "team": “flyers,
+        "featured": true
+      },
+      {
+        "id": "phillies-harper-tee",
+        "title": "Bryce Harper Philadelphia Phillies T-Shirt",
+        "description": "Player Name & Number Tee - Red",
+        "imageURL": "https://images.fanatics.com/example/harper-tee.jpg",
+        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
+        "price": "$39.99",
+        "team": "phillies",
+        "featured": false
+      },
+      {
+        "id": "sixers-embiid-jersey",
+        "title": "Joel Embiid Philadelphia 76ers Swingman Jersey",
+        "description": "Nike Swingman Jersey - Royal Blue",
+        "imageURL": "https://images.fanatics.com/example/embiid-jersey.jpg",
+        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
+        "price": "$109.99",
+        "team": "sixers",
+        "featured": true
+      },
+      {
+        "id": "flyers-hat",
+        "title": "Philadelphia Flyers Adjustable Hat",
+        "description": "Fanatics Branded - Orange/Black",
+        "imageURL": "https://images.fanatics.com/example/flyers-hat.jpg",
+        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
+        "price": "$29.99",
+        "team": "flyers",
+        "featured": false
+      },
+      {
+        "id": "union-scarf",
+        "title": "Philadelphia Union Supporter Scarf",
+        "description": "Official MLS Scarf - Navy/Gold",
+        "imageURL": "https://images.fanatics.com/example/union-scarf.jpg",
+        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
+        "price": "$34.99",
+        "team": "union",
+        "featured": false
+      }
+    ]
+  }
