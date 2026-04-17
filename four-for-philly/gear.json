@@ -9,46 +9,6 @@
         "price": "$35.00”,
         "team": “flyers,
         "featured": true
-      },
-      {
-        "id": "phillies-harper-tee",
-        "title": "Bryce Harper Philadelphia Phillies T-Shirt",
-        "description": "Player Name & Number Tee - Red",
-        "imageURL": "https://images.fanatics.com/example/harper-tee.jpg",
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
-        "price": "$39.99",
-        "team": "phillies",
-        "featured": false
-      },
-      {
-        "id": "sixers-embiid-jersey",
-        "title": "Joel Embiid Philadelphia 76ers Swingman Jersey",
-        "description": "Nike Swingman Jersey - Royal Blue",
-        "imageURL": "https://images.fanatics.com/example/embiid-jersey.jpg",
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
-        "price": "$109.99",
-        "team": "sixers",
-        "featured": true
-      },
-      {
-        "id": "flyers-hat",
-        "title": "Philadelphia Flyers Adjustable Hat",
-        "description": "Fanatics Branded - Orange/Black",
-        "imageURL": "https://images.fanatics.com/example/flyers-hat.jpg",
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
-        "price": "$29.99",
-        "team": "flyers",
-        "featured": false
-      },
-      {
-        "id": "union-scarf",
-        "title": "Philadelphia Union Supporter Scarf",
-        "description": "Official MLS Scarf - Navy/Gold",
-        "imageURL": "https://images.fanatics.com/example/union-scarf.jpg",
-        "affiliateURL": "https://www.fanatics.com/your-affiliate-link-here",
-        "price": "$34.99",
-        "team": "union",
-        "featured": false
-      }
+      }    
     ]
   }
