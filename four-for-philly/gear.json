@@ -71,17 +71,103 @@
       {
         "team": "phillies",
         "bannerURL": "https://fanatics.93n6tx.net/yZyAm3",                                                                 
-        "items": []
+        "items": [
+          {
+            "id": "philles-harper-jersey",                                                                                                
+            "title": "Bryce Harper Philadelphia Phillies Nike Alternate Limited Player Jersey - Light Blue",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-phillies/mens-nike-bryce-harper-light-blue-philadelphia-phillies-alternate-limited-player-jersey_ss5_p-202774514+pv-1+u-utt9hgolxfw67hxnj4xu+v-8rjutlfoduebhuz9itpn.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/GbnJ9L",                                                                           
+            "price": "$174.99"                                                                                                               
+          },
+          {
+            "id": "philles-logo-t-shirt",                                                                                                
+            "title": "Philadelphia Phillies Fanatics Vintage Logo Legacy T-Shirt - Burgundy",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-phillies/mens-fanatics-burgundy-philadelphia-phillies-vintage-logo-legacy-t-shirt_ss5_p-2001087409+pv-1+u-4cmb03advbr0c1xnh8xu+v-nchlnfap9ogcmxhbvgxk.png?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/3kjWQd",                                                                           
+            "price": "$34.99"                                                                                                               
+          },
+          {
+            "id": "philles-city-connect",                                                                                                
+            "title": "Philadelphia Phillies Nike City Connect Limited Jersey - Navy",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-phillies/mens-nike-navy-philadelphia-phillies-city-connect-limited-jersey_ss5_p-201955241+pv-1+u-4tlhhbiesse7wvvps1y8+v-ybgdhg9kmbaz6ag3grtl.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/m4zqM1",                                                                           
+            "price": "$154.99"                                                                                                               
+          },
+          {
+            "id": "philles-field-play-t-shirt",                                                                                                
+            "title": "Philadelphia Phillies Field Play T-Shirt - Garne",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-phillies/mens-garnet-philadelphia-phillies-field-play-t-shirt_ss5_p-202039450+pv-1+u-pikripjywkjkr7rppmxx+v-spfltiteqjp6bgfvo3td.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/QYJLD3",                                                                           
+            "price": "$39.99"                                                                                                               
+          }
+        ]
       },                                                                                                                                    
       {                                                     
         "team": "sixers",
         "bannerURL": "https://fanatics.93n6tx.net/qWA92Y",
-        "items": []                                                                                                                         
+        "items": [
+          {
+            "id": "sixers-Edgecombe-jersey",                                                                                                
+            "title": "V. J. Edgecombe Philadelphia 76ers Nike Unisex 2025 NBA Draft First Round Pick Swingman Jersey - Icon Edition - Royal",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-76ers/unisex-nike-v-j-edgecombe-royal-philadelphia-76ers-2025-nba-draft-first-round-pick-swingman-jersey-icon-edition_ss5_p-203256769+pv-1+u-solaj4rlxrwyecqkf2l5+v-at0a9k2mlcmtioh4rqqd.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/k4zE6d",                                                                           
+            "price": "$124.99"                                                                                                               
+          },
+          {
+            "id": "sixers-maxey-jersey",                                                                                                
+            "title": "Tyrese Maxey Philadelphia 76ers Fanatics Fast Break Replica Player Jersey - Statement Edition - Red",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-76ers/mens-fanatics-tyrese-maxey-red-philadelphia-76ers-fast-break-replica-player-jersey-statement-edition_ss5_p-201451114+pv-1+u-dkptnake18phgveu4uax+v-k7phjamrbmzrwqvjjvho.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/B5xagq",                                                                           
+            "price": "$79.99"                                                                                                               
+          },
+          {
+            "id": "sixers-practice-t-shirt",                                                                                                
+            "title": "Philadelphia 76ers Nike Authentic Practice T-Shirt - Royal",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-76ers/mens-nike-royal-philadelphia-76ers-authentic-practice-t-shirt_ss5_p-202601864+pv-1+u-ntkhcfccfp6vjfy2vdjv+v-mg3zmtsd3h4l6c4jccae.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/4aJ0vo",                                                                           
+            "price": "$34.99"                                                                                                               
+          },
+          {
+            "id": "sixers-iverson-jersey",                                                                                                
+            "title": "Allen Iverson Philadelphia 76ers Mitchell & Ness 2000/01 Hardwood Classics Swingman Jersey - Black",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-76ers/mens-mitchell-and-ness-allen-iverson-black-philadelphia-76ers-2000/01-hardwood-classics-swingman-jersey_pi2751000_altimages_ff_2751373alt1_full.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/MK5zMo",                                                                           
+            "price": "$134.99"                                                                                                               
+          }
+        ]                                                                                                                         
       },
       {                                                                                                                                     
         "team": "union",                                    
         "bannerURL": "https://fanatics.93n6tx.net/5kAE72",
-        "items": []                                                                                                                         
+        "items": [
+          {
+            "id": "union-replica-jersey",                                                                                                
+            "title": "Philadelphia Union adidas 2026 1776 Kit Replica Jersey - Navy",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-union/mens-adidas-navy-philadelphia-union-2026-1776-kit-replica-jersey_ss5_p-203658849+pv-1+u-jpkpthgajmg3zplwc3op+v-pp4qcksg6o05qgelsmjq.png?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/qWA9aY",                                                                           
+            "price": "$99.99"                                                                                                               
+          },{
+            "id": "union-authentic-t",                                                                                                
+            "title": "Philadelphia Union Custom Team Authentic T-Shirt - Navy",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-union/mens-navy-philadelphia-union-custom-team-authentic-t-shirt_ss5_p-202808202+pv-1+u-l33woj7qw6eiltbihp6d+v-nufhufxtla3dymg2qfko.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/k4zErL",                                                                           
+            "price": "$39.99"                                                                                                               
+          },
+          {
+            "id": "union-personalized-t-shirt",                                                                                                
+            "title": "Philadelphia Union The Game Is Everything Personalized Any Name & Number T-Shirt - Heather Gray",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-union/mens-heather-gray-philadelphia-union-the-game-is-everything-personalized-any-name-and-number-t-shirt_ss5_p-200106086+pv-1+u-peksjuaijajkg7wmjdcj+v-rs0phjv9mfzorekehvm7.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/zzyGYr",                                                                           
+            "price": "$39.99"                                                                                                               
+          },
+          {
+            "id": "union-logo-hoodie",                                                                                                
+            "title": "Philadelphia Union Shielded Logo Pullover Hoodie - Navy",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-union/mens-navy-philadelphia-union-shielded-logo-pullover-hoodie_ss5_p-3864596+pv-1+u-xies9xectgb7dmzd18rd+v-jkqf3i9cxftfcmi4d93w.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/E09172",                                                                           
+            "price": "$64.99"                                                                                                               
+          }
+        ]                                                                                                                         
       }
     ]                                                                                                                                       
   }
