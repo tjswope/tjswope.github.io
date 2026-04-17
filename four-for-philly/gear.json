@@ -37,12 +37,49 @@
       {                                                                                                                                     
         "team": "eagles",                                   
         "bannerURL": "https://fanatics.93n6tx.net/3kjWdM",
-        "items": []
+        "items": [
+          {
+            "id": "eagles-DeJean-Jersey",                                                                                                
+            "title": "Cooper DeJean Philadelphia Eagles Nike Alternate Game Jersey - Kelly Green",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-eagles/mens-nike-cooper-dejean-kelly-green-philadelphia-eagles-alternate-game-jersey_ss5_p-202634926+pv-1+u-2se4x0gws5cyrer88fzx+v-qk8zlsapmmhnb5g2l14k.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/bkGJqm",                                                                           
+            "price": "$149.99"                                                                                                               
+          },
+          {
+            "id": "eagles-franklin-t-shirt",                                                                                                
+            "title": "Philadelphia Eagles '47 Stripe Splash Franklin Throwback T-Shirt - Kelly Green",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-eagles/mens-47-kelly-green-philadelphia-eagles-stripe-splash-franklin-throwback-t-shirt_ss5_p-203086167+pv-1+u-8ft39a2uah1ymbnpa5mc+v-rlbvltnalbkxdzw9xxzi.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/rEGr0d",                                                                           
+            "price": "$37.99"                                                                                                               
+          },
+          {
+            "id": "eagles-pullover-hoodie",                                                                                                
+            "title": "Philadelphia Eagles Timeless Collection Vintage Arch Pullover Hoodie - Black",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-eagles/mens-black-philadelphia-eagles-timeless-collection-vintage-arch-pullover-hoodie_pi3054000_altimages_ff_3054447alt1_full.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/GbnJQ6",                                                                           
+            "price": "$64.99"                                                                                                               
+          },
+          {
+            "id": "eagles-sneakers",                                                                                                
+            "title": "Philadelphia Eagles Nike Unisex Air Max Verse Sneakers – White",
+            "imageURL": "https://fanatics.frgimages.com/philadelphia-eagles/unisex-nike-white-philadelphia-eagles-air-max-verse-sneakers_ss5_p-202983374+pv-1+u-hwf7e3huetm3alunrogt+v-n0ebxeihuxmcgfkc01lh.jpg?_hv=2&w=1018",                                                   
+            "affiliateURL": "https://fanatics.93n6tx.net/QYJLz9",                                                                           
+            "price": "$124.99"                                                                                                               
+          }
+        ]
       },
       {
         "team": "phillies",
         "bannerURL": "https://fanatics.93n6tx.net/yZyAm3",                                                                 
-        "items": []
+        "items": [
+          {
+            "id": "eagles-",                                                                                                
+            "title": "",
+            "imageURL": "",                                                   
+            "affiliateURL": "",                                                                           
+            "price": "$"                                                                                                               
+          },
+        ]
       },                                                                                                                                    
       {                                                     
         "team": "sixers",
