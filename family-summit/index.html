@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Summit - Goals & Habits, Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .back-link {
+            color: #a0aec0;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .back-link:hover {
+            color: #fff;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 27px;
+            margin: 0 auto 24px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: #a0aec0;
+            margin-bottom: 30px;
+        }
+
+        .app-store-badge {
+            display: inline-block;
+        }
+
+        .app-store-badge img {
+            height: 50px;
+        }
+
+        .features {
+            margin-bottom: 60px;
+        }
+
+        .features h2 {
+            font-size: 1.75rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .pricing {
+            text-align: center;
+            margin-bottom: 60px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px 30px;
+        }
+
+        .pricing h2 {
+            font-size: 1.75rem;
+            margin-bottom: 16px;
+        }
+
+        .pricing .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #54d8d3 0%, #58d65b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+
+        .pricing .price-note {
+            color: #718096;
+            margin-bottom: 24px;
+        }
+
+        .pricing ul {
+            list-style: none;
+            text-align: left;
+            max-width: 360px;
+            margin: 0 auto;
+        }
+
+        .pricing li {
+            color: #a0aec0;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing li::before {
+            content: "\2713";
+            color: #54d8d3;
+            font-weight: 700;
+        }
+
+        .free-note {
+            color: #a0aec0;
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .legal-links a {
+            color: #a0aec0;
+            text-decoration: none;
+        }
+
+        .legal-links a:hover {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            color: #718096;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">&larr; Back to all apps</a>
+
+        <div class="hero">
+            <img src="/images/family-summit-icon.png" alt="Family Summit" class="app-icon">
+            <h1>Family Summit</h1>
+            <p class="tagline">You're getting better every day &mdash; and so is your family. Set goals that stick, build daily habits, and grow together.</p>
+            <a href="https://apps.apple.com/app/id0000000000" class="app-store-badge">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+            </a>
+        </div>
+
+        <div class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goals That Stick</h3>
+                    <p>Write goals that are specific, measurable, and time-bound. An on-device AI coach helps you sharpen each one as you type.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔁</div>
+                    <h3>Build Habits</h3>
+                    <p>Break each goal into small daily, weekly, or monthly habits. Track streaks and watch your completion rate climb.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Grow Together</h3>
+                    <p>Share with up to 10 family members. See each other's progress, cheer a win with a tap, and improve side by side.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">✨</div>
+                    <h3>Daily Challenge</h3>
+                    <p>A fresh daily challenge keeps your momentum going &mdash; do it on your own or as a family.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📈</div>
+                    <h3>See Your Progress</h3>
+                    <p>Progress charts, calendars, and streaks make it easy to see how far you've come on every goal.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Private by Design</h3>
+                    <p>Use the whole app for free, stored on your device. AI coaching runs on-device &mdash; your drafts never leave your phone.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing">
+            <h2>Free to Use</h2>
+            <div class="price">$4.99</div>
+            <p class="price-note">Optional one-time purchase for Cloud &amp; Family Sharing</p>
+            <ul>
+                <li>The full app is free &mdash; goals, habits, daily challenge, AI coach</li>
+                <li>Cloud backup across your devices</li>
+                <li>Family sharing for up to 10 members</li>
+                <li>One-time purchase, no subscription</li>
+                <li>Try Cloud free for 7 days</li>
+            </ul>
+            <p class="free-note">No ads. Your data stays on your device unless you turn on Cloud.</p>
+        </div>
+
+        <div class="legal-links">
+            <a href="/family-summit/privacy.html">Privacy Policy</a>
+            <a href="/family-summit/terms.html">Terms of Service</a>
+            <a href="/family-summit/support.html">Support</a>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 New Wave Apps</p>
+        </footer>
+    </div>
+</body>
+</html>
