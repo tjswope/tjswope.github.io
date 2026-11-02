@@ -1,268 +1,236 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pitch Path - Ear Training for Musicians</title>
+    <meta name="description" content="Train your ear the hands-on way. Learn intervals, scales, and pitch recognition on guitar or piano.">
+    <meta property="og:title" content="Pitch Path - Ear Training for Musicians">
+    <meta property="og:description" content="Train your ear the hands-on way. Learn intervals, scales, and pitch recognition on guitar or piano.">
+    <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#090b14" media="(prefers-color-scheme: dark)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .back-link {
-            color: #a0aec0;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 40px;
-        }
-
-        .back-link:hover {
-            color: #fff;
-        }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 27px;
-            margin: 0 auto 24px;
-            display: block;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            color: #a0aec0;
-            margin-bottom: 30px;
-        }
-
-        .app-store-badge {
-            display: inline-block;
-        }
-
-        .app-store-badge img {
-            height: 50px;
-        }
-
-        .features {
-            margin-bottom: 60px;
-        }
-
-        .features h2 {
-            font-size: 1.75rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-        }
-
-        .feature {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
-        .feature h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-        }
-
-        .feature p {
-            color: #a0aec0;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .pricing {
-            text-align: center;
-            margin-bottom: 60px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 40px 30px;
-        }
-
-        .pricing h2 {
-            font-size: 1.75rem;
-            margin-bottom: 16px;
-        }
-
-        .pricing .price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-        }
-
-        .pricing .price-note {
-            color: #718096;
-            margin-bottom: 24px;
-        }
-
-        .pricing ul {
-            list-style: none;
-            text-align: left;
-            max-width: 360px;
-            margin: 0 auto;
-        }
-
-        .pricing li {
-            color: #a0aec0;
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .pricing li::before {
-            content: "\2713";
-            color: #4facfe;
-            font-weight: 700;
-        }
-
-        .free-note {
-            color: #a0aec0;
-            font-size: 0.9rem;
-            margin-top: 20px;
-        }
-
-        .legal-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 40px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .legal-links a {
-            color: #a0aec0;
-            text-decoration: none;
-        }
-
-        .legal-links a:hover {
-            color: #fff;
-        }
-
-        footer {
-            text-align: center;
-            color: #718096;
-            padding-top: 20px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
-    <div class="container">
-        <a href="/" class="back-link">&larr; Back to all apps</a>
-
-        <div class="hero">
-            <img src="/images/pitch-path-icon.png" alt="Pitch Path" class="app-icon">
-            <h1>Pitch Path</h1>
-            <p class="tagline">Train your ear the hands-on way. Learn intervals, scales, and pitch recognition on guitar or piano.</p>
-            <a href="https://apps.apple.com/app/id0000000000" class="app-store-badge">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-            </a>
+<body class="app-pitch-path">
+    <header class="site-header">
+        <div class="wrap">
+            <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+            <nav class="nav">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/#support">Support</a>
+                <a href="/contact/" class="nav-cta">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="features">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <div class="feature-icon">🎸</div>
-                    <h3>Guitar + Piano</h3>
-                    <p>Practice on a realistic guitar fretboard or a two-octave piano keyboard. Switch between them anytime.</p>
+    <main>
+        <section class="app-hero">
+            <div class="wrap">
+                <div class="reveal">
+                    <a href="/" class="crumb">← Back to all apps</a>
+                    <img src="/images/pitch-path-icon.png" alt="Pitch Path" class="hero-icon">
+                    <span class="eyebrow">Music</span>
+                    <h1>Pitch Path</h1>
+                    <p class="lede">The fun way to train your ear. Learn intervals, scales, and pitch recognition hands-on, on a guitar fretboard or piano keyboard.</p>
+                    <div class="hero-actions">
+                        <a href="https://apps.apple.com/app/id6762006073" class="store-badge"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a>
+                        <a href="/pitch-path/support.html" class="btn btn-ghost">Get support</a>
+                    </div>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🎵</div>
-                    <h3>Interval Training</h3>
-                    <p>Hear two notes, then find them. Start with 3rds and 5ths, unlock every interval, then advance to melodies.</p>
+                <div class="hero-shots reveal"><img src="/images/screens/pitch-path/1.jpg" alt="Pitch Path screenshot"><img src="/images/screens/pitch-path/2.jpg" alt="Pitch Path screenshot"></div>
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="Pitch Path sections">
+            <div class="wrap">
+                <span class="sub-title"><img src="/images/pitch-path-icon.png" alt="">Pitch Path</span>
+                <a class="sub-link" href="#screens">Screenshots</a><a class="sub-link" href="#features">Features</a><a class="sub-link" href="#pricing">Pricing</a><a class="sub-link" href="#help">Help</a>
+            </div>
+        </nav>
+
+        <section class="section" id="screens" style="padding-bottom: 32px">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Screenshots</span>
+                    <h2>Take a look</h2>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">👂</div>
-                    <h3>Pitch Recognition</h3>
-                    <p>Identify individual notes by ear. Each level adds one more note with chord-based calibration to train your memory.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">📈</div>
-                    <h3>21 Levels</h3>
-                    <p>14 interval training levels plus 7 pitch recognition levels. Progressive difficulty from beginner to advanced.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Learn From Mistakes</h3>
-                    <p>Every level starts with calibration. Get an answer wrong and the correct answer plays back so you learn as you go.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">📅</div>
-                    <h3>Track Progress</h3>
-                    <p>Daily progress calendar shows your scores and levels. Unlock levels permanently and pick up where you left off.</p>
+                <div class="gallery-wrap">
+                    <div class="gallery">
+                        <button type="button" aria-label="View screenshot 1"><img src="/images/screens/pitch-path/1.jpg" alt="Pitch Path screenshot 1" loading="lazy"></button>
+                        <button type="button" aria-label="View screenshot 2"><img src="/images/screens/pitch-path/2.jpg" alt="Pitch Path screenshot 2" loading="lazy"></button>
+                        <button type="button" aria-label="View screenshot 3"><img src="/images/screens/pitch-path/3.jpg" alt="Pitch Path screenshot 3" loading="lazy"></button>
+                    </div>
+                    <div class="gallery-nav">
+                        <button type="button" data-dir="-1" aria-label="Previous screenshots"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button type="button" data-dir="1" aria-label="Next screenshots"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="pricing">
-            <h2>Pricing</h2>
-            <div class="price">$2.99</div>
-            <p class="price-note">One-time purchase</p>
-            <ul>
-                <li>First 3 levels free in both modes</li>
-                <li>Unlock all 21 levels</li>
-                <li>Melodies up to 6 notes</li>
-                <li>All future updates included</li>
-            </ul>
-            <p class="free-note">Try it free &mdash; no account required, no ads.</p>
-        </div>
+        <section class="section section-alt" id="features">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Features</span>
+                    <h2>What you can do</h2>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature reveal">
+                        <div class="feature-icon">🎸</div>
+                        <h3>Guitar + Piano</h3>
+                        <p>Practice on a realistic guitar fretboard or a two-octave piano keyboard. Switch between them anytime.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">🎵</div>
+                        <h3>Interval Training</h3>
+                        <p>Hear two notes, then find them. Start with 3rds and 5ths, unlock every interval, then advance to melodies.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">👂</div>
+                        <h3>Pitch Recognition</h3>
+                        <p>Identify individual notes by ear. Each level adds one more note with chord-based calibration to train your memory.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">📈</div>
+                        <h3>21 Levels</h3>
+                        <p>14 interval training levels plus 7 pitch recognition levels. Progressive difficulty from beginner to advanced.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Learn From Mistakes</h3>
+                        <p>Every level starts with calibration. Get an answer wrong and the correct answer plays back so you learn as you go.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">📅</div>
+                        <h3>Track Progress</h3>
+                        <p>Daily progress calendar shows your scores and levels. Unlock levels permanently and pick up where you left off.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="legal-links">
-            <a href="/pitch-path/privacy.html">Privacy Policy</a>
-            <a href="/pitch-path/terms.html">Terms of Service</a>
-            <a href="/pitch-path/support.html">Support</a>
-        </div>
+        <section class="section" id="pricing">
+            <div class="wrap">
+                <div class="price-card reveal">
+                    <span class="eyebrow">Pricing</span>
+                    <h3>Pricing</h3>
+                    <div class="price">$2.99</div>
+                    <p class="price-note">One-time purchase</p>
+                    <ul><li>First 3 levels free in both modes</li><li>Unlock all 21 levels</li><li>Melodies up to 6 notes</li><li>All future updates included</li></ul>
+                    <p class="free-note">Try it free &mdash; no account required, no ads.</p>
+                </div>
+            </div>
+        </section>
 
-        <footer>
-            <p>&copy; 2026 New Wave Apps</p>
-        </footer>
-    </div>
+        <section class="section" id="help">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Help</span>
+                    <h2>Support &amp; legal</h2>
+                </div>
+                <div class="resources reveal">
+                    <a href="/pitch-path/support.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.5-2.5 2-2.5 3.5M12 17h.01"/></svg></span><div><b>Support &amp; FAQ</b><span>Answers to common questions</span></div></a>
+                    <a href="/contact/?app=pitch-path" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-4.6A8 8 0 1121 12z"/></svg></span><div><b>Contact us</b><span>Send a message</span></div></a>
+                    <a href="/pitch-path/privacy.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/></svg></span><div><b>Privacy Policy</b><span>How your data is handled</span></div></a>
+                    <a href="/pitch-path/terms.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><div><b>Terms of Service</b><span>The fine print</span></div></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" style="">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">More from New Wave Apps</span>
+                    <h2>You might also like</h2>
+                </div>
+                <div class="app-grid">
+                <a href="/worship-metronome/" class="app-card app-worship-metronome reveal" data-cat="music">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/worship-metronome/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/worship-metronome-icon.png" alt="Worship Metronome">
+                            <div><h3>Worship Metronome</h3><small>Music</small></div>
+                        </div>
+                        <p>The click track built for worship leaders. Build your setlist, share it with your band, and navigate songs with a Bluetooth page turner.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Music</span></div>
+                    </div>
+                </a>
+                <a href="/true-serving/" class="app-card app-true-serving reveal" data-cat="health">
+                    <div class="card-media"><img class="big-icon" src="/images/true-serving-icon.png" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/true-serving-icon.png" alt="True Serving">
+                            <div><h3>True Serving</h3><small>Health & Fitness</small></div>
+                        </div>
+                        <p>Snap your plate and get calories in seconds. LiDAR measures real portions, and an AI coach helps you decide what to eat.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health & Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/family-summit/" class="app-card app-family-summit reveal" data-cat="life">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/family-summit/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/family-summit-icon.png" alt="Family Summit">
+                            <div><h3>Family Summit</h3><small>Family &amp; Life</small></div>
+                        </div>
+                        <p>A stronger family, a stronger you. Set goals, build daily habits, and share progress with up to 10 family members.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Family &amp; Life</span></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <dialog class="lightbox" aria-label="Screenshot"><img src="" alt=""><button class="lightbox-close" aria-label="Close">×</button></dialog>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+                    <p>Thoughtfully made apps for iPhone, iPad &amp; Apple Watch.</p>
+                </div>
+                <div>
+                    <h4>Health &amp; Fitness</h4>
+                    <ul>
+                        <li><a href="/true-serving/">True Serving</a></li>
+                        <li><a href="/100dayfit/">100DayFit</a></li>
+                        <li><a href="/generictimer/">Rep Repeat</a></li>
+                        <li><a href="/keggle-kounter/">Keggle Kounter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More Apps</h4>
+                    <ul>
+                        <li><a href="/family-summit/">Family Summit</a></li>
+                        <li><a href="/four-for-philly/">Four for Philly</a></li>
+                        <li><a href="/clear-budgeting/">Clear Budgeting</a></li>
+                        <li><a href="/worship-metronome/">Worship Metronome</a></li>
+                        <li><a href="/pitch-path/">Pitch Path</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="/contact/">Contact form</a></li>
+                        <li><a href="mailto:support@newwaveapps.com">support@newwaveapps.com</a></li>
+                        <li><a href="mailto:privacy@newwaveapps.com">privacy@newwaveapps.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> New Wave Apps. All rights reserved.</span>
+                <span>Apple, the Apple logo, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/site.js" defer></script>
 </body>
 </html>

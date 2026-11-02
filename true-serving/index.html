@@ -1,270 +1,216 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>True Serving - AI Calorie Counter &amp; Coach</title>
+    <meta name="description" content="Snap your plate and get calories in seconds. LiDAR measures real portions, and an AI coach helps you decide what to eat.">
+    <meta property="og:title" content="True Serving - AI Calorie Counter &amp; Coach">
+    <meta property="og:description" content="Snap your plate and get calories in seconds. LiDAR measures real portions, and an AI coach helps you decide what to eat.">
+    <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#090b14" media="(prefers-color-scheme: dark)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .back-link {
-            color: #a0aec0;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 40px;
-        }
-
-        .back-link:hover {
-            color: #fff;
-        }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 27px;
-            margin: 0 auto 24px;
-            display: block;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            color: #a0aec0;
-            margin-bottom: 30px;
-        }
-
-        .app-store-badge {
-            display: inline-block;
-        }
-
-        .app-store-badge img {
-            height: 50px;
-        }
-
-        .features {
-            margin-bottom: 60px;
-        }
-
-        .features h2 {
-            font-size: 1.75rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-        }
-
-        .feature {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
-        .feature h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-        }
-
-        .feature p {
-            color: #a0aec0;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .pricing {
-            text-align: center;
-            margin-bottom: 60px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 40px 30px;
-        }
-
-        .pricing h2 {
-            font-size: 1.75rem;
-            margin-bottom: 16px;
-        }
-
-        .pricing .price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #54d8d3 0%, #58d65b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-        }
-
-        .pricing .price-note {
-            color: #718096;
-            margin-bottom: 24px;
-        }
-
-        .pricing ul {
-            list-style: none;
-            text-align: left;
-            max-width: 360px;
-            margin: 0 auto;
-        }
-
-        .pricing li {
-            color: #a0aec0;
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .pricing li::before {
-            content: "\2713";
-            color: #54d8d3;
-            font-weight: 700;
-        }
-
-        .free-note {
-            color: #a0aec0;
-            font-size: 0.9rem;
-            margin-top: 20px;
-        }
-
-        .legal-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 40px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .legal-links a {
-            color: #a0aec0;
-            text-decoration: none;
-        }
-
-        .legal-links a:hover {
-            color: #fff;
-        }
-
-        footer {
-            text-align: center;
-            color: #718096;
-            padding-top: 20px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
-    <div class="container">
-        <a href="/" class="back-link">&larr; Back to all apps</a>
-
-        <div class="hero">
-            <img src="/images/true-serving-icon.png" alt="True Serving" class="app-icon">
-            <h1>True Serving</h1>
-            <p class="tagline">Know what's really on your plate.</p>
-            <a href="https://apps.apple.com/app/id6825412605" class="app-store-badge">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-            </a>
+<body class="app-true-serving">
+    <header class="site-header">
+        <div class="wrap">
+            <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+            <nav class="nav">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/#support">Support</a>
+                <a href="/contact/" class="nav-cta">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="features">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <div class="feature-icon">📸</div>
-                    <h3>Snap Your Meal</h3>
-                    <p>Take a photo and get each food identified with calories, protein, carbs and fat. Adjust anything before you save.</p>
+    <main>
+        <section class="app-hero">
+            <div class="wrap">
+                <div class="reveal">
+                    <a href="/" class="crumb">← Back to all apps</a>
+                    <img src="/images/true-serving-icon.png" alt="True Serving" class="hero-icon">
+                    <span class="eyebrow">Health & Fitness</span>
+                    <h1>True Serving</h1>
+                    <p class="lede">Snap a photo of your meal and get calories, protein, carbs and fat in seconds. On iPhone Pro, LiDAR measures real portions, and an AI coach helps you decide what to eat.</p>
+                    <div class="hero-actions">
+                        <a href="https://apps.apple.com/app/id6825412605" class="store-badge"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a>
+                        <a href="/true-serving/support.html" class="btn btn-ghost">Get support</a>
+                    </div>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">📐</div>
-                    <h3>LiDAR Portions</h3>
-                    <p>On iPhone Pro models, a 3D scan measures how much food is actually on the plate, so portions aren't a guess.</p>
+                <div class="hero-shots reveal"><img class="solo-icon" src="/images/true-serving-icon.png" alt=""></div>
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="True Serving sections">
+            <div class="wrap">
+                <span class="sub-title"><img src="/images/true-serving-icon.png" alt="">True Serving</span>
+                <a class="sub-link" href="#features">Features</a><a class="sub-link" href="#pricing">Pricing</a><a class="sub-link" href="#help">Help</a>
+            </div>
+        </nav>
+
+        <section class="section section-alt" id="features">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Features</span>
+                    <h2>What you can do</h2>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🥄</div>
-                    <h3>Real-World Amounts</h3>
-                    <p>Amounts are shown the way you'd measure them: cups, tablespoons, ounces and slices, not grams.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">💬</div>
-                    <h3>Ask the Coach</h3>
-                    <p>"What should I order?" Coach knows your goals and today's meals, and looks up official restaurant nutrition with sources.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🏷️</div>
-                    <h3>Barcodes &amp; History</h3>
-                    <p>Scan packaged foods, search foods, or re-log favorites from your history, organized by breakfast, lunch, dinner and snacks.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">📈</div>
-                    <h3>See Your Progress</h3>
-                    <p>A calendar of every day, your weight trend, and calories in vs. out with Apple Health, plus an AI-written overview.</p>
+                <div class="feature-grid">
+                    <div class="feature reveal">
+                        <div class="feature-icon">📸</div>
+                        <h3>Snap Your Meal</h3>
+                        <p>Take a photo and get each food identified with calories, protein, carbs and fat. Adjust anything before you save.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">📐</div>
+                        <h3>LiDAR Portions</h3>
+                        <p>On iPhone Pro models, a 3D scan measures how much food is actually on the plate, so portions aren't a guess.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">🥄</div>
+                        <h3>Real-World Amounts</h3>
+                        <p>Amounts are shown the way you'd measure them: cups, tablespoons, ounces and slices, not grams.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">💬</div>
+                        <h3>Ask the Coach</h3>
+                        <p>"What should I order?" Coach knows your goals and today's meals, and looks up official restaurant nutrition with sources.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">🏷️</div>
+                        <h3>Barcodes &amp; History</h3>
+                        <p>Scan packaged foods, search foods, or re-log favorites from your history, organized by breakfast, lunch, dinner and snacks.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">📈</div>
+                        <h3>See Your Progress</h3>
+                        <p>A calendar of every day, your weight trend, and calories in vs. out with Apple Health, plus an AI-written overview.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="pricing">
-            <h2>Free to Use</h2>
-            <div class="price">$4.99/mo</div>
-            <p class="price-note">True Serving Plus, or $39.99/year (save 33%)</p>
-            <ul>
-                <li>Logging, barcodes, history, goals and charts are free</li>
-                <li>Plus adds photo calorie estimates</li>
-                <li>LiDAR portion scans</li>
-                <li>The Coach chat with restaurant lookups</li>
-                <li>The AI-written Insights overview</li>
-                <li>Try Plus free for a week &mdash; nothing to cancel</li>
-            </ul>
-            <p class="free-note">No ads. Your meals stay on your device. AI features only send data to Google Gemini after you allow it.</p>
-        </div>
+        <section class="section" id="pricing">
+            <div class="wrap">
+                <div class="price-card reveal">
+                    <span class="eyebrow">Pricing</span>
+                    <h3>Free to Use</h3>
+                    <div class="price">$4.99<span>/mo</span></div>
+                    <p class="price-note">True Serving Plus, or $39.99/year (save 33%)</p>
+                    <ul><li>Logging, barcodes, history, goals and charts are free</li><li>Plus adds photo calorie estimates</li><li>LiDAR portion scans</li><li>The Coach chat with restaurant lookups</li><li>The AI-written Insights overview</li><li>Try Plus free for a week &mdash; nothing to cancel</li></ul>
+                    <p class="free-note">No ads. Your meals stay on your device. AI features only send data to Google Gemini after you allow it.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="legal-links">
-            <a href="/true-serving/privacy.html">Privacy Policy</a>
-            <a href="/true-serving/terms.html">Terms of Service</a>
-            <a href="/true-serving/support.html">Support</a>
-        </div>
+        <section class="section" id="help">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Help</span>
+                    <h2>Support &amp; legal</h2>
+                </div>
+                <div class="resources reveal">
+                    <a href="/true-serving/support.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.5-2.5 2-2.5 3.5M12 17h.01"/></svg></span><div><b>Support &amp; FAQ</b><span>Answers to common questions</span></div></a>
+                    <a href="/contact/?app=true-serving" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-4.6A8 8 0 1121 12z"/></svg></span><div><b>Contact us</b><span>Send a message</span></div></a>
+                    <a href="/true-serving/privacy.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/></svg></span><div><b>Privacy Policy</b><span>How your data is handled</span></div></a>
+                    <a href="/true-serving/terms.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><div><b>Terms of Service</b><span>The fine print</span></div></a>
+                </div>
+            </div>
+        </section>
 
-        <footer>
-            <p>&copy; 2026 New Wave Apps</p>
-        </footer>
-    </div>
+        <section class="section section-alt" style="">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">More from New Wave Apps</span>
+                    <h2>You might also like</h2>
+                </div>
+                <div class="app-grid">
+                <a href="/100dayfit/" class="app-card app-100dayfit reveal" data-cat="health">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/100dayfit/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/100dayfit-icon.png" alt="100DayFit">
+                            <div><h3>100DayFit</h3><small>Health &amp; Fitness</small></div>
+                        </div>
+                        <p>Take the 100-day fitness challenge. AI-powered exercise counting for push-ups, plank, pull-ups, and bar hangs.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health &amp; Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/generictimer/" class="app-card app-generictimer reveal" data-cat="health">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/generictimer/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/generictimer-icon.png" alt="Rep Repeat">
+                            <div><h3>Rep Repeat</h3><small>Health &amp; Fitness</small></div>
+                        </div>
+                        <p>Customizable interval timers for workouts, cooking, studying, or any activity that needs timing.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health &amp; Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/keggle-kounter/" class="app-card app-keggle-kounter reveal" data-cat="health">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/keggle-kounter/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/keggle-kounter-icon.png" alt="Keggle Kounter">
+                            <div><h3>Keggle Kounter</h3><small>Health &amp; Fitness</small></div>
+                        </div>
+                        <p>Guided pelvic floor exercises with customizable timers, progress tracking, and smart reminders.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health &amp; Fitness</span></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <dialog class="lightbox" aria-label="Screenshot"><img src="" alt=""><button class="lightbox-close" aria-label="Close">×</button></dialog>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+                    <p>Thoughtfully made apps for iPhone, iPad &amp; Apple Watch.</p>
+                </div>
+                <div>
+                    <h4>Health &amp; Fitness</h4>
+                    <ul>
+                        <li><a href="/true-serving/">True Serving</a></li>
+                        <li><a href="/100dayfit/">100DayFit</a></li>
+                        <li><a href="/generictimer/">Rep Repeat</a></li>
+                        <li><a href="/keggle-kounter/">Keggle Kounter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More Apps</h4>
+                    <ul>
+                        <li><a href="/family-summit/">Family Summit</a></li>
+                        <li><a href="/four-for-philly/">Four for Philly</a></li>
+                        <li><a href="/clear-budgeting/">Clear Budgeting</a></li>
+                        <li><a href="/worship-metronome/">Worship Metronome</a></li>
+                        <li><a href="/pitch-path/">Pitch Path</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="/contact/">Contact form</a></li>
+                        <li><a href="mailto:support@newwaveapps.com">support@newwaveapps.com</a></li>
+                        <li><a href="mailto:privacy@newwaveapps.com">privacy@newwaveapps.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> New Wave Apps. All rights reserved.</span>
+                <span>Apple, the Apple logo, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/site.js" defer></script>
 </body>
 </html>

@@ -1,269 +1,240 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Summit - Goals & Habits, Together</title>
+    <title>Family Summit - Goals &amp; Habits, Together</title>
+    <meta name="description" content="A stronger family, a stronger you. Set goals, build daily habits, and share progress with up to 10 family members.">
+    <meta property="og:title" content="Family Summit - Goals &amp; Habits, Together">
+    <meta property="og:description" content="A stronger family, a stronger you. Set goals, build daily habits, and share progress with up to 10 family members.">
+    <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#090b14" media="(prefers-color-scheme: dark)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .back-link {
-            color: #a0aec0;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-bottom: 40px;
-        }
-
-        .back-link:hover {
-            color: #fff;
-        }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .app-icon {
-            width: 120px;
-            height: 120px;
-            border-radius: 27px;
-            margin: 0 auto 24px;
-            display: block;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            color: #a0aec0;
-            margin-bottom: 30px;
-        }
-
-        .app-store-badge {
-            display: inline-block;
-        }
-
-        .app-store-badge img {
-            height: 50px;
-        }
-
-        .features {
-            margin-bottom: 60px;
-        }
-
-        .features h2 {
-            font-size: 1.75rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
-        }
-
-        .feature {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
-        .feature h3 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-        }
-
-        .feature p {
-            color: #a0aec0;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        .pricing {
-            text-align: center;
-            margin-bottom: 60px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 40px 30px;
-        }
-
-        .pricing h2 {
-            font-size: 1.75rem;
-            margin-bottom: 16px;
-        }
-
-        .pricing .price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #54d8d3 0%, #58d65b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 8px;
-        }
-
-        .pricing .price-note {
-            color: #718096;
-            margin-bottom: 24px;
-        }
-
-        .pricing ul {
-            list-style: none;
-            text-align: left;
-            max-width: 360px;
-            margin: 0 auto;
-        }
-
-        .pricing li {
-            color: #a0aec0;
-            padding: 8px 0;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .pricing li::before {
-            content: "\2713";
-            color: #54d8d3;
-            font-weight: 700;
-        }
-
-        .free-note {
-            color: #a0aec0;
-            font-size: 0.9rem;
-            margin-top: 20px;
-        }
-
-        .legal-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 40px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .legal-links a {
-            color: #a0aec0;
-            text-decoration: none;
-        }
-
-        .legal-links a:hover {
-            color: #fff;
-        }
-
-        footer {
-            text-align: center;
-            color: #718096;
-            padding-top: 20px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
-    <div class="container">
-        <a href="/" class="back-link">&larr; Back to all apps</a>
-
-        <div class="hero">
-            <img src="/images/family-summit-icon.png" alt="Family Summit" class="app-icon">
-            <h1>Family Summit</h1>
-            <p class="tagline">A stronger family, a stronger you. Reach your summit together.</p>
-            <a href="https://apps.apple.com/app/id0000000000" class="app-store-badge">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
-            </a>
+<body class="app-family-summit">
+    <header class="site-header">
+        <div class="wrap">
+            <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+            <nav class="nav">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/#support">Support</a>
+                <a href="/contact/" class="nav-cta">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <div class="features">
-            <h2>Features</h2>
-            <div class="feature-grid">
-                <div class="feature">
-                    <div class="feature-icon">🎯</div>
-                    <h3>Goals That Stick</h3>
-                    <p>Write goals that are specific, measurable, and time-bound. An on-device AI coach helps you sharpen each one as you type.</p>
+    <main>
+        <section class="app-hero has-bg">
+            <img class="hero-bg" src="/images/screens/family-summit/hero-bg.jpg" alt="" fetchpriority="high">
+            <div class="wrap">
+                <div class="reveal">
+                    <a href="/" class="crumb">← Back to all apps</a>
+                    <img src="/images/family-summit-icon.png" alt="Family Summit" class="hero-icon">
+                    <span class="eyebrow">Family &amp; Life</span>
+                    <h1>Family Summit</h1>
+                    <p class="lede">Set goals that stick, break them into daily habits, and grow alongside the people you love, with an on-device AI coach in your corner.</p>
+                    <div class="hero-actions">
+                        <a href="https://apps.apple.com/app/id6773430543" class="store-badge"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a>
+                        <a href="/family-summit/support.html" class="btn btn-ghost">Get support</a>
+                    </div>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">🔁</div>
-                    <h3>Build Habits</h3>
-                    <p>Break each goal into small daily, weekly, or monthly habits. Track streaks and watch your completion rate climb.</p>
+
+            </div>
+        </section>
+
+        <nav class="subnav" aria-label="Family Summit sections">
+            <div class="wrap">
+                <span class="sub-title"><img src="/images/family-summit-icon.png" alt="">Family Summit</span>
+                <a class="sub-link" href="#screens">Screenshots</a><a class="sub-link" href="#features">Features</a><a class="sub-link" href="#pricing">Pricing</a><a class="sub-link" href="#help">Help</a>
+            </div>
+        </nav>
+
+        <section class="section" id="screens" style="padding-bottom: 32px">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Screenshots</span>
+                    <h2>Take a look</h2>
                 </div>
-                <div class="feature">
-                    <div class="feature-icon">👨‍👩‍👧‍👦</div>
-                    <h3>Grow Together</h3>
-                    <p>Share with up to 10 family members. See each other's progress, cheer a win with a tap, and improve side by side.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">✨</div>
-                    <h3>Daily Challenge</h3>
-                    <p>A fresh daily challenge keeps your momentum going &mdash; do it on your own or as a family.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">📈</div>
-                    <h3>See Your Progress</h3>
-                    <p>Progress charts, calendars, and streaks make it easy to see how far you've come on every goal.</p>
-                </div>
-                <div class="feature">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Private by Design</h3>
-                    <p>Use the whole app for free, stored on your device. AI coaching runs on-device &mdash; your drafts never leave your phone.</p>
+                <div class="gallery-wrap">
+                    <div class="gallery">
+                        <button type="button" aria-label="View screenshot 1"><img src="/images/screens/family-summit/1.jpg" alt="Family Summit screenshot 1" loading="lazy"></button>
+                        <button type="button" aria-label="View screenshot 2"><img src="/images/screens/family-summit/2.jpg" alt="Family Summit screenshot 2" loading="lazy"></button>
+                        <button type="button" aria-label="View screenshot 3"><img src="/images/screens/family-summit/3.jpg" alt="Family Summit screenshot 3" loading="lazy"></button>
+                        <button type="button" aria-label="View screenshot 4"><img src="/images/screens/family-summit/4.jpg" alt="Family Summit screenshot 4" loading="lazy"></button>
+                        <button type="button" aria-label="View screenshot 5"><img src="/images/screens/family-summit/5.jpg" alt="Family Summit screenshot 5" loading="lazy"></button>
+                        <button type="button" aria-label="View screenshot 6"><img src="/images/screens/family-summit/6.jpg" alt="Family Summit screenshot 6" loading="lazy"></button>
+                    </div>
+                    <div class="gallery-nav">
+                        <button type="button" data-dir="-1" aria-label="Previous screenshots"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button type="button" data-dir="1" aria-label="Next screenshots"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="pricing">
-            <h2>Free to Use</h2>
-            <div class="price">$4.99</div>
-            <p class="price-note">Optional one-time purchase for Cloud &amp; Family Sharing</p>
-            <ul>
-                <li>The full app is free &mdash; goals, habits, daily challenge, AI coach</li>
-                <li>Cloud backup across your devices</li>
-                <li>Family sharing for up to 10 members</li>
-                <li>One-time purchase, no subscription</li>
-                <li>Try Cloud free for 7 days</li>
-            </ul>
-            <p class="free-note">No ads. Your data stays on your device unless you turn on Cloud.</p>
-        </div>
+        <section class="section section-alt" id="features">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Features</span>
+                    <h2>What you can do</h2>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature reveal">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Goals That Stick</h3>
+                        <p>Write goals that are specific, measurable, and time-bound. An on-device AI coach helps you sharpen each one as you type.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">🔁</div>
+                        <h3>Build Habits</h3>
+                        <p>Break each goal into small daily, weekly, or monthly habits. Track streaks and watch your completion rate climb.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Grow Together</h3>
+                        <p>Share with up to 10 family members. See each other's progress, cheer a win with a tap, and improve side by side.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">✨</div>
+                        <h3>Daily Challenge</h3>
+                        <p>A fresh daily challenge keeps your momentum going &mdash; do it on your own or as a family.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">📈</div>
+                        <h3>See Your Progress</h3>
+                        <p>Progress charts, calendars, and streaks make it easy to see how far you've come on every goal.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Private by Design</h3>
+                        <p>Use the whole app for free, stored on your device. AI coaching runs on-device &mdash; your drafts never leave your phone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="legal-links">
-            <a href="/family-summit/privacy.html">Privacy Policy</a>
-            <a href="/family-summit/terms.html">Terms of Service</a>
-            <a href="/family-summit/support.html">Support</a>
-        </div>
+        <section class="section" id="pricing">
+            <div class="wrap">
+                <div class="price-card reveal">
+                    <span class="eyebrow">Pricing</span>
+                    <h3>Free to Use</h3>
+                    <div class="price">$4.99</div>
+                    <p class="price-note">Optional one-time purchase for Cloud &amp; Family Sharing</p>
+                    <ul><li>The full app is free &mdash; goals, habits, daily challenge, AI coach</li><li>Cloud backup across your devices</li><li>Family sharing for up to 10 members</li><li>One-time purchase, no subscription</li><li>Try Cloud free for 7 days</li></ul>
+                    <p class="free-note">No ads. Your data stays on your device unless you turn on Cloud.</p>
+                </div>
+            </div>
+        </section>
 
-        <footer>
-            <p>&copy; 2026 New Wave Apps</p>
-        </footer>
-    </div>
+        <section class="section" id="help">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Help</span>
+                    <h2>Support &amp; legal</h2>
+                </div>
+                <div class="resources reveal">
+                    <a href="/family-summit/support.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.5-2.5 2-2.5 3.5M12 17h.01"/></svg></span><div><b>Support &amp; FAQ</b><span>Answers to common questions</span></div></a>
+                    <a href="/contact/?app=family-summit" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-4.6A8 8 0 1121 12z"/></svg></span><div><b>Contact us</b><span>Send a message</span></div></a>
+                    <a href="/family-summit/privacy.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/></svg></span><div><b>Privacy Policy</b><span>How your data is handled</span></div></a>
+                    <a href="/family-summit/terms.html" class="resource"><span class="r-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><div><b>Terms of Service</b><span>The fine print</span></div></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" style="">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">More from New Wave Apps</span>
+                    <h2>You might also like</h2>
+                </div>
+                <div class="app-grid">
+                <a href="/clear-budgeting/" class="app-card app-clear-budgeting reveal" data-cat="life">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/clear-budgeting/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/clear-budgeting-icon.png" alt="Clear Budgeting">
+                            <div><h3>Clear Budgeting</h3><small>Family &amp; Life</small></div>
+                        </div>
+                        <p>Take control of your finances. Track expenses, scan receipts, and share budgets with family.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Family &amp; Life</span></div>
+                    </div>
+                </a>
+                <a href="/true-serving/" class="app-card app-true-serving reveal" data-cat="health">
+                    <div class="card-media"><img class="big-icon" src="/images/true-serving-icon.png" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/true-serving-icon.png" alt="True Serving">
+                            <div><h3>True Serving</h3><small>Health & Fitness</small></div>
+                        </div>
+                        <p>Snap your plate and get calories in seconds. LiDAR measures real portions, and an AI coach helps you decide what to eat.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health & Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/four-for-philly/" class="app-card app-four-for-philly reveal" data-cat="sports">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/four-for-philly/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/four-for-philly-icon.png" alt="Four for Philly">
+                            <div><h3>Four for Philly</h3><small>Sports</small></div>
+                        </div>
+                        <p>Scores, standings, and AI-powered news briefings for the Eagles, Phillies, Flyers, and Sixers — all in one place.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Sports</span></div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <dialog class="lightbox" aria-label="Screenshot"><img src="" alt=""><button class="lightbox-close" aria-label="Close">×</button></dialog>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+                    <p>Thoughtfully made apps for iPhone, iPad &amp; Apple Watch.</p>
+                </div>
+                <div>
+                    <h4>Health &amp; Fitness</h4>
+                    <ul>
+                        <li><a href="/true-serving/">True Serving</a></li>
+                        <li><a href="/100dayfit/">100DayFit</a></li>
+                        <li><a href="/generictimer/">Rep Repeat</a></li>
+                        <li><a href="/keggle-kounter/">Keggle Kounter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More Apps</h4>
+                    <ul>
+                        <li><a href="/family-summit/">Family Summit</a></li>
+                        <li><a href="/four-for-philly/">Four for Philly</a></li>
+                        <li><a href="/clear-budgeting/">Clear Budgeting</a></li>
+                        <li><a href="/worship-metronome/">Worship Metronome</a></li>
+                        <li><a href="/pitch-path/">Pitch Path</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="/contact/">Contact form</a></li>
+                        <li><a href="mailto:support@newwaveapps.com">support@newwaveapps.com</a></li>
+                        <li><a href="mailto:privacy@newwaveapps.com">privacy@newwaveapps.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> New Wave Apps. All rights reserved.</span>
+                <span>Apple, the Apple logo, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/site.js" defer></script>
 </body>
 </html>

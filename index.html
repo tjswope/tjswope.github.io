@@ -1,232 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Wave Apps</title>
+    <title>New Wave Apps — Thoughtful apps for iPhone, iPad &amp; Apple Watch</title>
+    <meta name="description" content="New Wave Apps makes thoughtfully designed apps for iPhone, iPad and Apple Watch: True Serving, Family Summit, Four for Philly, 100DayFit, Clear Budgeting, Rep Repeat, Keggle Kounter, Worship Metronome and Pitch Path.">
+    <meta property="og:title" content="New Wave Apps — Thoughtful apps for iPhone, iPad &amp; Apple Watch">
+    <meta property="og:description" content="New Wave Apps makes thoughtfully designed apps for iPhone, iPad and Apple Watch: True Serving, Family Summit, Four for Philly, 100DayFit, Clear Budgeting, Rep Repeat, Keggle Kounter, Worship Metronome and Pitch Path.">
+    <meta name="theme-color" content="#f6f7fb" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#090b14" media="(prefers-color-scheme: dark)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            min-height: 100vh;
-            color: #fff;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 16px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            color: #a0aec0;
-        }
-
-        .apps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-
-        .app-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .app-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .app-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 18px;
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-
-        .app-card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .app-card p {
-            color: #a0aec0;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .app-links {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .app-link {
-            font-size: 0.875rem;
-            color: #667eea;
-            text-decoration: none;
-        }
-
-        .app-link:hover {
-            text-decoration: underline;
-        }
-
-
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #718096;
-        }
-
-        footer a {
-            color: #a0aec0;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #fff;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 20px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>New Wave Apps</h1>
-            <p class="tagline">Crafted with care for iOS & Apple Watch</p>
-        </header>
-
-        <div class="apps-grid">
-            <a href="/true-serving/" class="app-card">
-                <img src="/images/true-serving-icon.png" alt="True Serving" class="app-icon">
-                <h2>True Serving</h2>
-                <p>Snap your plate and get calories in seconds. LiDAR measures real portions, and an AI coach helps you decide what to eat.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/family-summit/" class="app-card">
-                <img src="/images/family-summit-icon.png" alt="Family Summit" class="app-icon">
-                <h2>Family Summit</h2>
-                <p>A stronger family, a stronger you. Set goals, build daily habits, and share progress with up to 10 family members.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/four-for-philly/" class="app-card">
-                <img src="/images/four-for-philly-icon.png" alt="Four for Philly" class="app-icon">
-                <h2>Four for Philly</h2>
-                <p>Scores, standings, and AI-powered news briefings for the Eagles, Phillies, Flyers, and Sixers — all in one place.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/100dayfit/" class="app-card">
-                <img src="/images/100dayfit-icon.png" alt="100DayFit" class="app-icon">
-                <h2>100DayFit</h2>
-                <p>Take the 100-day fitness challenge. AI-powered exercise counting for push-ups, plank, pull-ups, and bar hangs.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/clear-budgeting/" class="app-card">
-                <img src="/images/clear-budgeting-icon.png" alt="Clear Budgeting" class="app-icon">
-                <h2>Clear Budgeting</h2>
-                <p>Take control of your finances. Track expenses, scan receipts, and share budgets with family.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/generictimer/" class="app-card">
-                <img src="/images/generictimer-icon.png" alt="Rep Repeat" class="app-icon">
-                <h2>Rep Repeat</h2>
-                <p>Customizable interval timers for workouts, cooking, studying, or any activity that needs timing.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/keggle-kounter/" class="app-card">
-                <img src="/images/keggle-kounter-icon.png" alt="Keggle Kounter" class="app-icon">
-                <h2>Keggle Kounter</h2>
-                <p>Guided pelvic floor exercises with customizable timers, progress tracking, and smart reminders.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/worship-metronome/" class="app-card">
-                <img src="/images/worship-metronome-icon.png" alt="Worship Metronome" class="app-icon">
-                <h2>Worship Metronome</h2>
-                <p>The click track built for worship leaders. Build your setlist, share it with your band, and navigate songs with a Bluetooth page turner.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
-
-            <a href="/pitch-path/" class="app-card">
-                <img src="/images/pitch-path-icon.png" alt="Pitch Path" class="app-icon">
-                <h2>Pitch Path</h2>
-                <p>Train your ear the hands-on way. Learn intervals, scales, and pitch recognition on guitar or piano.</p>
-                <div class="app-links">
-                    <span class="app-link">Learn More →</span>
-                </div>
-            </a>
+    <header class="site-header">
+        <div class="wrap">
+            <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+            <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+            <nav class="nav">
+                <a href="/#apps">Apps</a>
+                <a href="/#about">About</a>
+                <a href="/#support">Support</a>
+                <a href="/contact/" class="nav-cta">Contact</a>
+            </nav>
         </div>
+    </header>
 
-        <footer>
-            <p>&copy; 2025 New Wave Apps. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="mailto:support@newwaveapps.com">Contact</a>
+    <main>
+        <section class="hero-home">
+            <div class="wrap">
+                <div class="reveal">
+                    <span class="pill"><b>NEW</b> True Serving — calories from a photo</span>
+                    <h1>Apps that make <span class="grad-text">everyday life</span> a little better.</h1>
+                    <p class="lede">New Wave Apps builds focused, beautifully simple apps for iPhone, iPad and Apple Watch — for your health, your music, your family and your team.</p>
+                    <div class="hero-actions">
+                        <a href="#apps" class="btn btn-primary">Explore the apps</a>
+                        <a href="/contact/" class="btn btn-ghost">Get in touch</a>
+                    </div>
+                </div>
+                <div class="icon-cloud" aria-label="Our apps">
+                    <a href="/true-serving/" aria-label="True Serving"><img src="/images/true-serving-icon.png" alt="True Serving"></a>
+                    <a href="/family-summit/" aria-label="Family Summit"><img src="/images/family-summit-icon.png" alt="Family Summit"></a>
+                    <a href="/four-for-philly/" aria-label="Four for Philly"><img src="/images/four-for-philly-icon.png" alt="Four for Philly"></a>
+                    <a href="/100dayfit/" aria-label="100DayFit"><img src="/images/100dayfit-icon.png" alt="100DayFit"></a>
+                    <a href="/clear-budgeting/" aria-label="Clear Budgeting"><img src="/images/clear-budgeting-icon.png" alt="Clear Budgeting"></a>
+                    <a href="/generictimer/" aria-label="Rep Repeat"><img src="/images/generictimer-icon.png" alt="Rep Repeat"></a>
+                    <a href="/keggle-kounter/" aria-label="Keggle Kounter"><img src="/images/keggle-kounter-icon.png" alt="Keggle Kounter"></a>
+                    <a href="/worship-metronome/" aria-label="Worship Metronome"><img src="/images/worship-metronome-icon.png" alt="Worship Metronome"></a>
+                    <a href="/pitch-path/" aria-label="Pitch Path"><img src="/images/pitch-path-icon.png" alt="Pitch Path"></a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <section class="stats" aria-label="At a glance">
+            <div class="wrap">
+                <div class="stat"><strong>9</strong><span>apps and counting</span></div>
+                <div class="stat"><strong>iPhone · iPad · Watch</strong><span>built for Apple platforms</span></div>
+                <div class="stat"><strong>On-device AI</strong><span>smart features, private by design</span></div>
+                <div class="stat"><strong>Real support</strong><span>every message gets read</span></div>
+            </div>
+        </section>
+
+        <section class="section" id="apps">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">The lineup</span>
+                    <h2>Our apps</h2>
+                    <p>Each one does one job really well. Tap any app for screenshots, features, pricing and support.</p>
+                </div>
+                <div class="chips" role="group" aria-label="Filter apps">
+                    <button class="chip" data-filter="all" aria-pressed="true">All</button>
+                    <button class="chip" data-filter="health" aria-pressed="false">Health &amp; Fitness</button>
+                    <button class="chip" data-filter="music" aria-pressed="false">Music</button>
+                    <button class="chip" data-filter="life" aria-pressed="false">Family &amp; Life</button>
+                    <button class="chip" data-filter="sports" aria-pressed="false">Sports</button>
+                </div>
+                <div class="carousel">
+                    <div class="app-track">
+                <a href="/true-serving/" class="app-card app-true-serving" data-cat="health">
+                    <div class="card-media"><img class="big-icon" src="/images/true-serving-icon.png" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/true-serving-icon.png" alt="True Serving">
+                            <div><h3>True Serving</h3><small>Health & Fitness</small></div>
+                        </div>
+                        <p>Snap your plate and get calories in seconds. LiDAR measures real portions, and an AI coach helps you decide what to eat.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health & Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/family-summit/" class="app-card app-family-summit" data-cat="life">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/family-summit/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/family-summit-icon.png" alt="Family Summit">
+                            <div><h3>Family Summit</h3><small>Family &amp; Life</small></div>
+                        </div>
+                        <p>A stronger family, a stronger you. Set goals, build daily habits, and share progress with up to 10 family members.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Family &amp; Life</span></div>
+                    </div>
+                </a>
+                <a href="/four-for-philly/" class="app-card app-four-for-philly" data-cat="sports">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/four-for-philly/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/four-for-philly-icon.png" alt="Four for Philly">
+                            <div><h3>Four for Philly</h3><small>Sports</small></div>
+                        </div>
+                        <p>Scores, standings, and AI-powered news briefings for the Eagles, Phillies, Flyers, and Sixers — all in one place.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Sports</span></div>
+                    </div>
+                </a>
+                <a href="/100dayfit/" class="app-card app-100dayfit" data-cat="health">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/100dayfit/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/100dayfit-icon.png" alt="100DayFit">
+                            <div><h3>100DayFit</h3><small>Health &amp; Fitness</small></div>
+                        </div>
+                        <p>Take the 100-day fitness challenge. AI-powered exercise counting for push-ups, plank, pull-ups, and bar hangs.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health &amp; Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/clear-budgeting/" class="app-card app-clear-budgeting" data-cat="life">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/clear-budgeting/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/clear-budgeting-icon.png" alt="Clear Budgeting">
+                            <div><h3>Clear Budgeting</h3><small>Family &amp; Life</small></div>
+                        </div>
+                        <p>Take control of your finances. Track expenses, scan receipts, and share budgets with family.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Family &amp; Life</span></div>
+                    </div>
+                </a>
+                <a href="/generictimer/" class="app-card app-generictimer" data-cat="health">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/generictimer/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/generictimer-icon.png" alt="Rep Repeat">
+                            <div><h3>Rep Repeat</h3><small>Health &amp; Fitness</small></div>
+                        </div>
+                        <p>Customizable interval timers for workouts, cooking, studying, or any activity that needs timing.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health &amp; Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/keggle-kounter/" class="app-card app-keggle-kounter" data-cat="health">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/keggle-kounter/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/keggle-kounter-icon.png" alt="Keggle Kounter">
+                            <div><h3>Keggle Kounter</h3><small>Health &amp; Fitness</small></div>
+                        </div>
+                        <p>Guided pelvic floor exercises with customizable timers, progress tracking, and smart reminders.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Health &amp; Fitness</span></div>
+                    </div>
+                </a>
+                <a href="/worship-metronome/" class="app-card app-worship-metronome" data-cat="music">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/worship-metronome/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/worship-metronome-icon.png" alt="Worship Metronome">
+                            <div><h3>Worship Metronome</h3><small>Music</small></div>
+                        </div>
+                        <p>The click track built for worship leaders. Build your setlist, share it with your band, and navigate songs with a Bluetooth page turner.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Music</span></div>
+                    </div>
+                </a>
+                <a href="/pitch-path/" class="app-card app-pitch-path" data-cat="music">
+                    <div class="card-media has-cover"><img class="cover" src="/images/screens/pitch-path/card.jpg" alt="" loading="lazy"></div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <img src="/images/pitch-path-icon.png" alt="Pitch Path">
+                            <div><h3>Pitch Path</h3><small>Music</small></div>
+                        </div>
+                        <p>Train your ear the hands-on way. Learn intervals, scales, and pitch recognition on guitar or piano.</p>
+                        <div class="card-foot"><span class="card-more">Learn more →</span><span class="tag">Music</span></div>
+                    </div>
+                </a>
+                    </div>
+                    <div class="gallery-nav">
+                        <button type="button" data-dir="-1" aria-label="Previous apps"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+                        <button type="button" data-dir="1" aria-label="Next apps"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="wrap">
+                <div class="section-head center reveal">
+                    <span class="eyebrow">Spotlight</span>
+                    <h2>A closer look</h2>
+                    <p>A few favorites, straight from the App Store.</p>
+                </div>
+            <div class="spotlight app-worship-metronome">
+                <div class="spot-media reveal"><img src="/images/screens/worship-metronome/2.jpg" alt="Worship Metronome screenshot" loading="lazy"><img src="/images/screens/worship-metronome/3.jpg" alt="Worship Metronome screenshot" loading="lazy"></div>
+                <div class="spot-copy reveal">
+                    <div class="app-mini"><img src="/images/worship-metronome-icon.png" alt=""><span class="eyebrow">For worship teams</span></div>
+                    <h3>Your chord chart and click track on one screen.</h3>
+                    <p>The metronome app built for worship leaders. Import your Sunday set from Planning Center, share it with your band, and change songs hands-free with a Bluetooth pedal.</p>
+                    <ul class="checks"><li>Setlists with tempo, time signature and click settings</li><li>Planning Center import and a chart for every song</li><li>Share with your band via AirDrop or email</li></ul>
+                    <div class="spot-actions"><a href="/worship-metronome/" class="btn btn-accent">Explore Worship Metronome</a><a href="https://apps.apple.com/app/id6761557469" class="store-badge"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a></div>
+                </div>
+            </div>
+            <div class="spotlight app-100dayfit flip">
+                <div class="spot-media reveal"><img src="/images/screens/100dayfit/2.jpg" alt="100DayFit screenshot" loading="lazy"><img src="/images/screens/100dayfit/3.jpg" alt="100DayFit screenshot" loading="lazy"></div>
+                <div class="spot-copy reveal">
+                    <div class="app-mini"><img src="/images/100dayfit-icon.png" alt=""><span class="eyebrow">100 days to a fitter you</span></div>
+                    <h3>A complete at-home workout that counts your reps.</h3>
+                    <p>Mix and match your daily routine, let the app guide you through every set, and use AI to detect your reps.</p>
+                    <ul class="checks"><li>Camera-based counting for push-ups and plank</li><li>Targets that grow as you get stronger</li><li>Leaderboards with friends and Strava sharing</li></ul>
+                    <div class="spot-actions"><a href="/100dayfit/" class="btn btn-accent">Explore 100DayFit</a><a href="https://apps.apple.com/app/id6758625663" class="store-badge"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a></div>
+                </div>
+            </div>
+            <div class="spotlight app-pitch-path">
+                <div class="spot-media reveal"><img src="/images/screens/pitch-path/2.jpg" alt="Pitch Path screenshot" loading="lazy"><img src="/images/screens/pitch-path/3.jpg" alt="Pitch Path screenshot" loading="lazy"></div>
+                <div class="spot-copy reveal">
+                    <div class="app-mini"><img src="/images/pitch-path-icon.png" alt=""><span class="eyebrow">For musicians</span></div>
+                    <h3>The fun way to train your ear.</h3>
+                    <p>Hear it, then find it on a real guitar fretboard or piano keyboard. Pitch Path turns ear training into something you do with your hands.</p>
+                    <ul class="checks"><li>14 interval levels and 7 pitch recognition levels</li><li>Guitar and piano modes</li><li>First 3 levels free, no account required</li></ul>
+                    <div class="spot-actions"><a href="/pitch-path/" class="btn btn-accent">Explore Pitch Path</a><a href="https://apps.apple.com/app/id6762006073" class="store-badge"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store"></a></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section" id="about">
+            <div class="wrap">
+                <div class="section-head center reveal">
+                    <span class="eyebrow">About</span>
+                    <h2>Small studio. Big care.</h2>
+                    <p>New Wave Apps is an independent studio making apps we want to use ourselves, and that respect the people who use them.</p>
+                </div>
+                <div class="values">
+                    <div class="value reveal"><div class="v-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></div><h3>Made with care</h3><p>Focused apps with clean, native design. Every feature earns its place.</p></div>
+                    <div class="value reveal"><div class="v-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div><h3>Private by design</h3><p>Where we can, data stays on your device and AI runs on-device. When it can't, we ask first.</p></div>
+                    <div class="value reveal"><div class="v-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12l-8 8-9-9V3h8l9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div><h3>Fair pricing</h3><p>Generous free tiers, one-time purchases where it makes sense, and free trials so you can try before you buy.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" id="support">
+            <div class="wrap">
+                <div class="section-head reveal">
+                    <span class="eyebrow">Help center</span>
+                    <h2>Support for every app</h2>
+                    <p>Find answers to common questions, or send us a message below.</p>
+                </div>
+                <div class="resources reveal">
+                <a href="/true-serving/support.html" class="resource app-true-serving"><img src="/images/true-serving-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>True Serving</b><span>FAQ &amp; support</span></div></a>
+                <a href="/family-summit/support.html" class="resource app-family-summit"><img src="/images/family-summit-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>Family Summit</b><span>FAQ &amp; support</span></div></a>
+                <a href="/four-for-philly/support.html" class="resource app-four-for-philly"><img src="/images/four-for-philly-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>Four for Philly</b><span>FAQ &amp; support</span></div></a>
+                <a href="/100dayfit/support.html" class="resource app-100dayfit"><img src="/images/100dayfit-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>100DayFit</b><span>FAQ &amp; support</span></div></a>
+                <a href="/clear-budgeting/support.html" class="resource app-clear-budgeting"><img src="/images/clear-budgeting-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>Clear Budgeting</b><span>FAQ &amp; support</span></div></a>
+                <a href="/generictimer/support.html" class="resource app-generictimer"><img src="/images/generictimer-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>Rep Repeat</b><span>FAQ &amp; support</span></div></a>
+                <a href="/keggle-kounter/support.html" class="resource app-keggle-kounter"><img src="/images/keggle-kounter-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>Keggle Kounter</b><span>FAQ &amp; support</span></div></a>
+                <a href="/worship-metronome/support.html" class="resource app-worship-metronome"><img src="/images/worship-metronome-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>Worship Metronome</b><span>FAQ &amp; support</span></div></a>
+                <a href="/pitch-path/support.html" class="resource app-pitch-path"><img src="/images/pitch-path-icon.png" alt="" style="width:42px;height:42px;border-radius:11px"><div><b>Pitch Path</b><span>FAQ &amp; support</span></div></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="wrap">
+                <div class="contact-grid">
+                    <div class="contact-aside reveal">
+                        <span class="eyebrow">Contact</span>
+                        <h2>Let's talk.</h2>
+                        <p>Questions, bug reports, feature ideas, or just want to say hi? Send a message and it lands straight in our inbox.</p>
+                        <div class="contact-cards">
+                            <a class="contact-card" href="mailto:support@newwaveapps.com"><span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><div><b>App support</b><span>support@newwaveapps.com</span></div></a>
+                            <a class="contact-card" href="mailto:privacy@newwaveapps.com"><span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/></svg></span><div><b>Privacy requests</b><span>privacy@newwaveapps.com</span></div></a>
+                            <a class="contact-card" href="/#support"><span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 015 .5c0 1.5-2.5 2-2.5 3.5M12 17h.01"/></svg></span><div><b>FAQs &amp; help pages</b><span>Answers for every app</span></div></a>
+                        </div>
+                    </div>
+                    <form class="form-card contact-form reveal" novalidate>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="cf-name">Name</label>
+                                <input id="cf-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+                            </div>
+                            <div class="field">
+                                <label for="cf-email">Email</label>
+                                <input id="cf-email" name="email" type="email" autocomplete="email" maxlength="200" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="cf-app">App <span class="opt">(optional)</span></label>
+                                <select id="cf-app" name="app">
+                                <option value="">General / not app specific</option>
+                                <option value="true-serving">True Serving</option>
+                                <option value="family-summit">Family Summit</option>
+                                <option value="four-for-philly">Four for Philly</option>
+                                <option value="100dayfit">100DayFit</option>
+                                <option value="clear-budgeting">Clear Budgeting</option>
+                                <option value="generictimer">Rep Repeat</option>
+                                <option value="keggle-kounter">Keggle Kounter</option>
+                                <option value="worship-metronome">Worship Metronome</option>
+                                <option value="pitch-path">Pitch Path</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="cf-topic">Topic</label>
+                                <select id="cf-topic" name="topic">
+                                <option>Question or help</option>
+                                <option>Bug report</option>
+                                <option>Feature idea or feedback</option>
+                                <option>Billing or subscription</option>
+                                <option>Business or press</option>
+                                <option>Something else</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="cf-message">Message</label>
+                            <textarea id="cf-message" name="message" maxlength="5000" required placeholder="How can we help? If you're reporting a bug, include your device and iOS version."></textarea>
+                        </div>
+                        <div class="hp" aria-hidden="true">
+                            <label for="cf-company">Company</label>
+                            <input id="cf-company" name="company" type="text" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="form-foot">
+                            <small>We'll only use your email to reply to you.</small>
+                            <button type="submit" class="btn btn-primary">Send message</button>
+                        </div>
+                        <div class="form-status" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="/" class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M2 14c2.5 0 2.5-4 5-4s2.5 4 5 4 2.5-4 5-4 2.5 4 5 4"/><path d="M2 19c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3" opacity=".6"/></svg></span>New Wave Apps</a>
+                    <p>Thoughtfully made apps for iPhone, iPad &amp; Apple Watch.</p>
+                </div>
+                <div>
+                    <h4>Health &amp; Fitness</h4>
+                    <ul>
+                        <li><a href="/true-serving/">True Serving</a></li>
+                        <li><a href="/100dayfit/">100DayFit</a></li>
+                        <li><a href="/generictimer/">Rep Repeat</a></li>
+                        <li><a href="/keggle-kounter/">Keggle Kounter</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>More Apps</h4>
+                    <ul>
+                        <li><a href="/family-summit/">Family Summit</a></li>
+                        <li><a href="/four-for-philly/">Four for Philly</a></li>
+                        <li><a href="/clear-budgeting/">Clear Budgeting</a></li>
+                        <li><a href="/worship-metronome/">Worship Metronome</a></li>
+                        <li><a href="/pitch-path/">Pitch Path</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="/contact/">Contact form</a></li>
+                        <li><a href="mailto:support@newwaveapps.com">support@newwaveapps.com</a></li>
+                        <li><a href="mailto:privacy@newwaveapps.com">privacy@newwaveapps.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; <span data-year>2026</span> New Wave Apps. All rights reserved.</span>
+                <span>Apple, the Apple logo, iPhone, iPad and Apple Watch are trademarks of Apple Inc.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="/assets/site.js" defer></script>
 </body>
 </html>
