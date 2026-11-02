@@ -98,12 +98,6 @@
             status.innerHTML = html;
         }
 
-        function mailtoFallback(data) {
-            var subject = 'Website message' + (data.app ? ' – ' + data.app : '');
-            var body = data.message + '\n\n— ' + data.name + ' (' + data.email + ')';
-            return 'mailto:support@newwaveapps.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        }
-
         form.addEventListener('submit', function (e) {
             e.preventDefault();
             if (!form.checkValidity()) { form.reportValidity(); return; }
@@ -145,7 +139,7 @@
                 form.reset();
                 show('ok', '<strong>Thanks — your message is on its way.</strong> We’ll get back to you as soon as we can.');
             }).catch(function () {
-                show('err', 'Sorry, your message couldn’t be sent. You can <a href="' + mailtoFallback(data) + '">email us directly</a> instead.');
+                show('err', 'Sorry, your message couldn’t be sent. Please check your connection and try again in a moment.');
             }).finally(function () {
                 submit.disabled = false;
                 submit.textContent = label;
