@@ -71,6 +71,10 @@
     {
       "source": "/contact",
       "destination": "/contact/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/about/index.html"
     }
   ],
   "headers": [
