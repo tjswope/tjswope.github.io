@@ -77,6 +77,7 @@
     }
 
     // Contact form
+    var WEB3FORMS_KEY = '7b2b1ad2-5027-4d3c-961f-63817f4f07c1';
     var form = document.querySelector('form.contact-form');
     if (form) {
         var status = form.querySelector('.form-status');
@@ -112,25 +113,39 @@
             fd.forEach(function (v, k) { data[k] = typeof v === 'string' ? v.trim() : v; });
             if (appSelect && appSelect.selectedIndex > 0) data.app = appSelect.options[appSelect.selectedIndex].text;
 
+            // Honeypot: bots fill the hidden field. Pretend success without sending.
+            if (data.company) { form.reset(); show('ok', '<strong>Thanks — your message is on its way.</strong>'); return; }
+
             submit.disabled = true;
             var label = submit.textContent;
             submit.textContent = 'Sending…';
 
-            fetch('/api/contact', {
+            // Delivered by Web3Forms (web3forms.com) straight to the owner's inbox.
+            // The access key is meant to be public; it can only send messages to that inbox.
+            fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(data)
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({
+                    access_key: WEB3FORMS_KEY,
+                    subject: ['Website message', data.app, data.topic].filter(Boolean).join(' – '),
+                    from_name: 'New Wave Apps website',
+                    replyto: data.email,
+                    name: data.name,
+                    email: data.email,
+                    app: data.app || 'General',
+                    topic: data.topic,
+                    message: data.message
+                })
             }).then(function (res) {
                 return res.json().catch(function () { return {}; }).then(function (json) {
-                    if (!res.ok) throw new Error(json.error || 'Request failed');
+                    if (!res.ok || json.success === false) throw new Error('Request failed');
                     return json;
                 });
             }).then(function () {
                 form.reset();
                 show('ok', '<strong>Thanks — your message is on its way.</strong> We’ll get back to you as soon as we can.');
-            }).catch(function (err) {
-                show('err', 'Sorry, your message couldn’t be sent' + (err && err.message && err.message !== 'Request failed' ? ' (' + err.message + ')' : '') +
-                    '. You can <a href="' + mailtoFallback(data) + '">email us directly</a> instead.');
+            }).catch(function () {
+                show('err', 'Sorry, your message couldn’t be sent. You can <a href="' + mailtoFallback(data) + '">email us directly</a> instead.');
             }).finally(function () {
                 submit.disabled = false;
                 submit.textContent = label;
